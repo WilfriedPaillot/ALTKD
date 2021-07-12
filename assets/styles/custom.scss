@@ -1,0 +1,21 @@
+// Required elements loaded for override
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/variables";
+
+// Here, i can...
+
+    //create custom colors map for merge
+    
+    // Merge 2 maps in 1
+
+    // Activate unable options
+
+    // override BS defaults fonts and styles of variables        
+
+    // activate unable options
+
+// Add all BS natives and overriden styles on my custom.css
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Now, i can use additionnal custom styles

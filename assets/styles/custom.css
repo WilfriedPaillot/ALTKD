@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Special+Elite&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11342,6 +11343,7 @@ fieldset:disabled .btn {
 }
 
 .logo.overlay {
+  margin-top: 15px;
   height: 120px;
   width: auto;
 }
@@ -11349,6 +11351,13 @@ fieldset:disabled .btn {
 span.navbar-toggler-icon {
   height: 49px;
   width: 47px;
+}
+
+.nav-link {
+  line-height: 0.85;
+  font-family: 'Special Elite', cursive;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 .navbar-collapse {
@@ -11363,6 +11372,11 @@ span.navbar-toggler-icon {
   .navbar-collapse {
     position: static;
     height: auto;
+  }
+  .nav-link {
+    line-height: initial;
+    font-size: initial;
+    letter-spacing: initial;
   }
 }
 /*# sourceMappingURL=custom.css.map */

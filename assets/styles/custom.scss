@@ -47,6 +47,9 @@ $navbar-toggler-focus-width:        none;
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Now, i can use additionnal custom styles
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Special+Elite&display=swap');
+//font-family: 'Merriweather', serif;
+//font-family: 'Special Elite', cursive;
 
 .logo {
     height:80px;
@@ -54,15 +57,22 @@ $navbar-toggler-focus-width:        none;
     filter:drop-shadow(0px 0px 6px var(--bs-cultured));
 
     &.overlay {
+        margin-top:15px;
         height:120px;
         width: auto;
-        
     }
 }
 
 span.navbar-toggler-icon {
     height: 49px;
     width:47px;
+}
+
+.nav-link {
+    line-height: 0.85;
+    font-family: 'Special Elite', cursive;
+    font-size:1.5rem;
+    letter-spacing: 2px;
 }
 
 // Affichage du menu collaspe en overlay
@@ -79,5 +89,12 @@ span.navbar-toggler-icon {
     .navbar-collapse{
         position: static;
         height: auto;
+    }
+
+    //Retour à la gestion de l'affichage géré par BS
+    .nav-link {
+        line-height: initial;
+        font-size:initial;
+        letter-spacing: initial;
     }
 }

@@ -5,17 +5,38 @@
 
 // Here, i can...
 
+    $rich-black-fogra-39: rgba(11, 9, 10, 1);
+    $eerie-black: rgba(22, 26, 29, 1);
+    $blood-red: rgba(102, 7, 8, 1);
+    $ruby-red: rgba(164, 22, 26, 1);
+    $carnelian: rgba(186, 24, 27, 1);
+    $imperial-red: rgba(229, 56, 59, 1);
+    $silver-chalice: rgba(177, 167, 166, 1);
+    $light-gray: rgba(211, 211, 211, 1);
+    $cultured: rgba(245, 243, 244, 1);
+
     //create custom colors map for merge
-    
+    $new-colors: (
+    "rich-black-fogra": $rich-black-fogra-39,
+    "eerie-black": $eerie-black,
+    "blood-red": $blood-red,
+    "ruby-red": $ruby-red,
+    "carnelian": $carnelian,
+    "imperial-red": $imperial-red,
+    "silver-chalice": $silver-chalice,
+    "light-gray": $light-gray,
+    "cultured": $cultured,
+    );
     // Merge 2 maps in 1
+    $theme-colors: map-merge($theme-colors, $new-colors);
 
     // Activate unable options
 
     // override BS defaults fonts and styles of variables        
 
-$navbar-dark-color:                 rgba($white, .55) !default;
-$navbar-dark-hover-color:           rgba(212,175,55, 0.75);
-$navbar-dark-active-color:          $white !default;
+$navbar-dark-color:                 $silver-chalice;
+$navbar-dark-hover-color:           $imperial-red;
+$navbar-dark-active-color:          $cultured;
 $navbar-dark-toggler-icon-bg:       url("../img/header/burgerMenu.svg");
 $navbar-dark-toggler-border-color:  none;
 $navbar-toggler-focus-width:        none;
@@ -32,7 +53,7 @@ $navbar-toggler-focus-width:        none;
     width: auto;
 
     &.overlay {
-        height:180px;
+        height:120px;
         width: auto;
     }
 }
@@ -42,16 +63,18 @@ span.navbar-toggler-icon {
     width:47px;
 }
 
+// Affichage du menu collaspe en overlay
 .navbar-collapse {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color:#121526;
+    //background-color:var(--bs-eerie-black);
 }
 
 @media screen and (min-width:992px){
+    // Retour à la gestion de l'affichage du menu collapsé par les classes BS
     .navbar-collapse{
         position: static;
         height: auto;

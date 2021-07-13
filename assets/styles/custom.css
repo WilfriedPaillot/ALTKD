@@ -11338,6 +11338,7 @@ fieldset:disabled .btn {
 .logo {
   height: 80px;
   width: auto;
+  filter: drop-shadow(0px 0px 6px var(--bs-cultured));
 }
 
 .logo.overlay {
@@ -11362,7 +11363,6 @@ span.navbar-toggler-icon {
   .navbar-collapse {
     position: static;
     height: auto;
-    background-color: initial;
   }
 }
 /*# sourceMappingURL=custom.css.map */

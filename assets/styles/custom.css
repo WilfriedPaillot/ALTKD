@@ -10278,6 +10278,11 @@ fieldset:disabled .btn {
   width: auto;
 }
 
+.logo.overlay {
+  height: 180px;
+  width: auto;
+}
+
 span.navbar-toggler-icon {
   height: 49px;
   width: 47px;

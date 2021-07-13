@@ -30,6 +30,11 @@ $navbar-toggler-focus-width:        none;
 .logo {
     height:80px;
     width: auto;
+
+    &.overlay {
+        height:180px;
+        width: auto;
+    }
 }
 
 span.navbar-toggler-icon {

@@ -31,6 +31,7 @@
     $theme-colors: map-merge($theme-colors, $new-colors);
 
     // Activate unable options
+    $enable-negative-margins: true;
 
     // override BS defaults fonts and styles of variables        
 
@@ -68,7 +69,7 @@ span.navbar-toggler-icon {
     width:47px;
 }
 
-.nav-link {
+header .nav-link {
     line-height: 0.85;
     font-family: 'Special Elite', cursive;
     font-size:1.5rem;
@@ -78,23 +79,56 @@ span.navbar-toggler-icon {
 // Affichage du menu collaspe en overlay
 .navbar-collapse {
     position: absolute;
+    //sinon, le logo_sans_texte du footer apparait dans le menu overlay
+    z-index:1000;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height:100vh;
+    //Nécessaire pour empêcher le scroll 
+    position: fixed;
+    overflow:hidden;
 }
 
 @media screen and (min-width:992px){
     // Retour à la gestion de l'affichage du menu collapsé par les classes BS
-    .navbar-collapse{
+    header .navbar-collapse{
         position: static;
         height: auto;
     }
 
     //Retour à la gestion de l'affichage géré par BS
-    .nav-link {
+    header .nav-link {
         line-height: initial;
         font-size:initial;
         letter-spacing: initial;
     }
 }
+
+.logo_sans_texte {
+    position: relative;
+    top:-5vh;
+    height: 130px;
+    width: 130px;
+    margin: auto;
+        & .test {
+        filter:drop-shadow(0px 0px 15px var(--bs-ruby-red));
+        }
+}
+
+footer {
+    font-family: 'Special Elite', cursive;
+        h5 { 
+            color: var(--bs-cultured); 
+            font-size: 1.5rem;
+        }
+        & .nav-link {
+            color: var(--bs-silver-chalice);
+            font-size: 1rem;
+            letter-spacing:2px;
+                &.active { color: var(--bs-cultured); }
+                &:hover { color: var(--bs-imperial-red); }           
+            }
+        p { font-family: initial; }
+}
+

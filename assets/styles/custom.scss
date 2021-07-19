@@ -42,6 +42,8 @@ $navbar-dark-toggler-icon-bg:       url("../img/header/burgerMenu.svg");
 $navbar-dark-toggler-border-color:  none;
 $navbar-toggler-focus-width:        none;
 
+$carousel-indicator-active-bg:       $carnelian;
+
     // activate unable options
 
 // Add all BS natives and overriden styles on my custom.css
@@ -51,6 +53,14 @@ $navbar-toggler-focus-width:        none;
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Special+Elite&display=swap');
 //font-family: 'Merriweather', serif;
 //font-family: 'Special Elite', cursive;
+
+header {
+    background-image: url(../img/header/bg_header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+}
 
 .logo {
     height:80px;
@@ -116,6 +126,33 @@ header .nav-link {
         }
 }
 
+main  {
+        .card { border-style: none; }
+        
+        h5.card-title  { 
+            font-family: 'Special Elite', cursive;
+            color: var(--bs-eerie-black); 
+            font-size: 1.85rem;
+        }
+        h6.card-subtitle  { 
+            font-size: 1.25rem;
+        }
+        & a.card-link {
+            color: var(--bs-carnelian);
+                &:hover { color: var(--bs-blood-red); }
+                &:visited { color: var(--bs-blood-red); }        
+            }
+        
+        .clefs {
+            font-family: 'Special Elite', cursive;
+            line-height: 1rem;            
+            letter-spacing:4px;
+
+        & p { font-size: 1.55rem; }        
+        & span { font-size: 1.25rem; }
+        }
+}
+
 footer {
     font-family: 'Special Elite', cursive;
         h5 { 
@@ -132,3 +169,9 @@ footer {
         p { font-family: initial; }
 }
 
+.carousel-item img {
+    min-height:240px;
+    height: 240px;
+    object-fit: fill;
+    filter: grayscale(60%);
+}

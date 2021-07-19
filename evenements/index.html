@@ -38,7 +38,7 @@
               <a class="nav-link active" href="/taekwondo/" title="Le taekwondo">Le taekwondo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/evenements/" title="Evenements">Evenements</a>
+              <a class="nav-link" href="#" title="Evenements">Evenements</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" title="Galerie">Galerie</a>
@@ -66,57 +66,47 @@
   </header>
 
 <main>
-  <section class="row-cols-1 mt-4">
+  <section class="row-cols-1 my-4">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title ms-n3">Le taekwondo</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Valeurs et traditions</h6>
+        <h5 class="card-title ms-n3">Contactez-nous</h5>
         <p class="card-text">
-          Les fondamentaux philosophiques du taekwondo sont basés sur les cinq commandements 
-          des Hwarang en tant que référence historique.<br>
-          Ces 5 principes fondamentaux, sont:
-          <ul>
-            <li>Courtoisie</li>
-            <li>Intégrité</li>
-            <li>Maîtrise de soi</li>
-            <li>Persévérance</li>
-            <li>Esprit indomptable</li>
-          </ul>
-          Chaque taekwondoiste doit apprendre, comprendre et appliquer ces principes à l'intérieur comme à 
-          l'extérieur du Dojang pour le mener sur la voie de la maîtrise de cet art martial.
+          Contactez-nous en utilisant le formulaire ci-dessous, en précisant l’objet de votre message et vos coordonnées.<br> 
+          Nous vous recontacterons dans les plus brefs délais.
         </p>
-        <img src="/assets/img/pages/5-tenets.jpg" alt="" class="img-fluid">
       </div>
     </div>
-    <div class="card">
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Les bienfaits du taekwondo</h6>
-        <p class="card-text">
-          Le taekwondo peut se pratiquer à tous les âges.<br>
-          Activité entraînant une grande dépense d’énergie, le taekwondo est un sport très complet, 
-          augmentant l’<strong>endurance</strong>, la <strong>souplesse</strong>, la <strong>tonicité</strong> 
-          et la <strong>force</strong> physique.<br>
-          Il contribue ainsi à un bon développement physique et cérébral.
-        </p>
-        <img src="/assets/img/pages/jeune-taekwondoiste.jpg" alt="" class="img-fluid">
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Pour conclure</h6>
-        <p class="card-text">
-          Le <strong>taekwondo</strong> est loin d’être seulement une redoutable méthode
-          d’<strong>autodéfense</strong> ou un attractif <strong>sport de combat</strong>. 
-          Le taekwondo est aussi un <u>art de vivre</u>.
-        </p>
-        <p>
-          Alors n’hésites plus et viens nous rejoindre!
-        </p>
-        <div class="d-flex justify-content-center mb-5">
-          <a class="btn btn-carnelian" href="/rejoindre/" role="button">Rejoins-nous</a>
+<div class="row-cols-1">
+  <div class="col-md-6">
+      <form class="d-flex flex-column align-items-stretch mt-3 mb-5">
+        <div class="mb-3 mx-3">
+          <label for="nom" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="nom" aria-describedby="nomHelp">
+          <div id="nomlHelp" class="form-text">Saisissez votre nom</div>
         </div>
-      </div>
-    </div>
+        <div class="mb-3 mx-3">
+          <label for="prénom" class="form-label">Prénom</label>
+          <input type="text" class="form-control" id="prénom" aria-describedby="prénomHelp">
+          <div id="prénomHelp" class="form-text">Saisissez votre prénom</div>
+        </div>
+        <div class="mb-3 mx-3">
+          <label for="Email" class="form-label">Adresse mail</label>
+          <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Saisissez une adresse mail valide</div>
+        </div>
+        <div class="mb-3 mx-3">
+          <label for="téléphone" class="form-label">Numéro de téléphone</label>
+          <input type="tel" class="form-control" id="téléphone">
+        </div>
+        <div class="mb-3 mx-3">
+          <label for="msg">Message :</label>
+          <textarea id="msg" name="message" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-carnelian align-self-center">Envoyer</button>
+      </form>
+  </div>
+</div>
+
   </section>
 <br>
 </main>
@@ -135,7 +125,6 @@
             <li class="nav-item"><a class="nav-link" href="/index.html">Accueil</a></li>
             <li class="nav-item"><a class="nav-link" href="/academie/">L'académie</a></li>
             <li class="nav-item"><a class="nav-link active" href="/taekwondo/">Le taekwondo</a></li>
-            <li class="nav-item"><a class="nav-link active" href="/evenements/">Evenements</a></li>
             <li class="nav-item"><a class="nav-link" href="">Galerie</a></li>
             <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
           </ul>

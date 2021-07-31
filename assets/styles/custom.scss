@@ -9,8 +9,7 @@
     $eerie-black: rgba(22, 26, 29, 1);
     $blood-red: rgba(102, 7, 8, 1);
     $ruby-red: rgba(164, 22, 26, 1);
-    $carnelian: rgba(186, 24, 27, 1);
-    $test: #ba181b;
+    $carnelian: rgba(186, 24, 27, 1); 
     $imperial-red: rgba(229, 56, 59, 1);
     $silver-chalice: rgba(177, 167, 166, 1);
     $light-gray: rgba(211, 211, 211, 1);
@@ -26,7 +25,7 @@
     "imperial-red": $imperial-red,
     "silver-chalice": $silver-chalice,
     "light-gray": $light-gray,
-    "cultured": $cultured,
+    "cultured": $cultured
     );
     // Merge 2 maps in 1
     $theme-colors: map-merge($theme-colors, $new-colors);
@@ -37,22 +36,35 @@
 
     // override BS defaults fonts and styles of variables        
 
-$navbar-dark-color:                 $silver-chalice;
-$navbar-dark-hover-color:           $imperial-red;
-$navbar-dark-active-color:          $cultured;
-$navbar-dark-toggler-icon-bg:       url("../img/header/burgerMenu.svg");
-$navbar-dark-toggler-border-color:  none;
-$navbar-toggler-focus-width:        none;
+    $navbar-dark-color:                 $silver-chalice;
+    $navbar-dark-hover-color:           $imperial-red;
+    $navbar-dark-active-color:          $cultured;
+    $navbar-dark-toggler-icon-bg:       url("../img/header/burgerMenu.svg");
+    $navbar-dark-toggler-border-color:  none;
+    $navbar-toggler-focus-width:        none;
 
-$carousel-indicator-active-bg:       $carnelian;
+    $carousel-indicator-active-bg:       $carnelian;
 
 //$box-shadow-inset: inset 0 1px 2px rgba($imperial-red, .075);
-//$component-active-bg: $ruby-red;
-$input-focus-border-color: $carnelian;
-//$input-box-shadow: $imperial-red;
+//$component-active-bg:               theme-colors("carnelian");
+$input-focus-border-color: $carnelian;  
+// $input-box-shadow: $imperial-red;
 $input-focus-box-shadow: none;
+//$accordion-button-active-bg:        theme-colors(--bs-carnelian);
 
-    // activate unable options
+// @import "../../node_modules/bootstrap/scss/accordion";
+
+// $accordion-button-color:        $imperial-red;
+
+// bg-color actif
+$accordion-button-active-bg:    $ruby-red;
+// text-color actif
+$accordion-button-active-color: $cultured;
+// effet d'ombre off
+$accordion-button-focus-box-shadow:none;
+// Icone de couleur = texte actif
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-button-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+
 
 // Add all BS natives and overriden styles on my custom.css
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
@@ -183,3 +195,7 @@ footer {
     object-fit: fill;
     filter: grayscale(60%);
 }
+
+// .accordion-button:not(.collapsed)::after {
+//     background-image:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill=><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+// }

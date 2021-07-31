@@ -1,10 +1,11 @@
 document.addEventListener("click",function (e){
     //console.log(e.target);
-    if (e.target.classList.contains("img-thumbnail")){
+    if (e.target.classList.contains("gallerie-img")){
         const src = e.target.getAttribute("src");
-        //console.log(src);
+        const paragraphContent = e.target.getAttribute("alt");
         document.querySelector(".modal-img").src = src;
-        const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
+        document.querySelector(".modal-img-legend").textContent = paragraphContent;
+        const myModal = new bootstrap.Modal(document.getElementById('gallerie-modal'));
         myModal.show();
     }
 })

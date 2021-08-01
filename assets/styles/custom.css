@@ -6043,7 +6043,7 @@ textarea.form-control-lg {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: #f5f3f4;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
@@ -12800,4 +12800,8 @@ footer p {
   -o-object-fit: fill;
      object-fit: fill;
   filter: grayscale(60%);
+}
+
+.modal-content {
+  filter: drop-shadow(0 0 0.55rem #b1a7a6);
 }/*# sourceMappingURL=custom.css.map */

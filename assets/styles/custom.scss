@@ -118,6 +118,8 @@ header .nav-link {
     //Nécessaire pour empêcher le scroll 
     position: fixed;
     overflow:hidden;
+    background-color: var(--bs-eerie-black);
+
 }
 
 @media screen and (min-width:992px){
@@ -125,6 +127,7 @@ header .nav-link {
     header .navbar-collapse{
         position: static;
         height: auto;
+        background-color: transparent;
     }
 
     //Retour à la gestion de l'affichage géré par BS
@@ -134,6 +137,17 @@ header .nav-link {
         letter-spacing: initial;
     }
 }
+@media screen and (min-width:1440px){
+header {
+    background-image: url(../img/header/bg_header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    background-color: #222000;
+}
+}
+
 
 .logo_sans_texte {
     position: relative;

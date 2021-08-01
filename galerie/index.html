@@ -35,13 +35,13 @@
               <a class="nav-link" href="/academie/" title="L'académie">L'académie</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/taekwondo/" title="Le taekwondo">Le taekwondo</a>
+              <a class="nav-link" href="/taekwondo/" title="Le taekwondo">Le taekwondo</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/evenements/" title="Evenements">Evenements</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/galerie/" title="Galerie">Galerie</a>
+              <a class="nav-link active" href="/galerie/" title="Galerie">Galerie</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/contact/" title="Contact">Contact</a>
@@ -65,61 +65,59 @@
     <!-- END of navbar -->
   </header>
 
-<main>
-  <section class="row-cols-1 mt-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title ms-n3">Le taekwondo</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Valeurs et traditions</h6>
-        <p class="card-text">
-          Les fondamentaux philosophiques du taekwondo sont basés sur les cinq commandements 
-          des Hwarang en tant que référence historique.<br>
-          Ces 5 principes fondamentaux, sont:
-          <ul>
-            <li>Courtoisie</li>
-            <li>Intégrité</li>
-            <li>Maîtrise de soi</li>
-            <li>Persévérance</li>
-            <li>Esprit indomptable</li>
-          </ul>
-          Chaque taekwondoiste doit apprendre, comprendre et appliquer ces principes à l'intérieur comme à 
-          l'extérieur du Dojang pour le mener sur la voie de la maîtrise de cet art martial.
-        </p>
-        <img src="/assets/img/pages/5-tenets.jpg" alt="" class="img-fluid">
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Les bienfaits du taekwondo</h6>
-        <p class="card-text">
-          Le taekwondo peut se pratiquer à tous les âges.<br>
-          Activité entraînant une grande dépense d’énergie, le taekwondo est un sport très complet, 
-          augmentant l’<strong>endurance</strong>, la <strong>souplesse</strong>, la <strong>tonicité</strong> 
-          et la <strong>force</strong> physique.<br>
-          Il contribue ainsi à un bon développement physique et cérébral.
-        </p>
-        <img src="/assets/img/pages/jeune-taekwondoiste.jpg" alt="" class="img-fluid">
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-body">
-        <h6 class="card-subtitle mb-2 text-muted">Pour conclure</h6>
-        <p class="card-text">
-          Le <strong>taekwondo</strong> est loin d’être seulement une redoutable méthode
-          d’<strong>autodéfense</strong> ou un attractif <strong>sport de combat</strong>. 
-          Le taekwondo est aussi un <u>art de vivre</u>.
-        </p>
-        <p>
-          Alors n’hésites plus et viens nous rejoindre!
-        </p>
-        <div class="d-flex justify-content-center mb-5">
-          <a class="btn btn-carnelian" href="/rejoindre/" role="button">Rejoins-nous</a>
+  <main>
+    <section class="container">
+        <h5 class="card-title mt-4 ms-n2">Galerie</h5>
+      <div class="gallerie mb-5">
+
+        <div class="row mt-4">
+        <div class="col-md-4 my-2">
+          <img class="img-thumbnail d-block mx-auto" src="/assets/img/pages/galerie/saison2021/136699139_1844343112401379_4738505800421943360_n.jpg" alt="Groupe ados saison 2020/2021">
+        </div>
+        <div class="col-md-4 my-2">
+          <img class="img-thumbnail d-block mx-auto" src="/assets/img/pages/galerie/saison2021/reprise_sept.jpg" alt="Entrainement de reprise Septembre 2020">
+        </div>
+        <div class="col-md-4 my-2">
+          <img class="img-thumbnail d-block mx-auto" src="/assets/img/pages/galerie/jury/IMG_0183.jpg" alt="23 taekwondoistes montés en grade">
+        </div>
+        <div class="col-md-4 my-2">
+          <img class="img-thumbnail d-block mx-auto" src="/assets/img/pages/galerie/jury/110240862_280054776608127_1982665219093720792_n.jpg" alt="Les toutes jeunes juges-arbitres">
+        </div>
+        <div class="col-md-4 my-2">
+          <img class="img-thumbnail d-block mx-auto" src="/assets/img/pages/galerie/jury/108200267_128706638910976_2293154201236084460_n.jpg" alt="Souvenir de Liège">
+        </div>
+        <div class="col-md-4 my-2">
+          <img class="img-thumbnail d-block mx-auto" src="/assets/img/pages/galerie/jury/110240862_280054776608127_1982665219093720792_n.jpg" alt="Les toutes jeunes juges-arbitres">
         </div>
       </div>
+    
     </div>
-  </section>
-<br>
-</main>
+    </section>
+
+    <!-- Button trigger modal  -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gallery-modal">
+      Launch demo modal
+    </button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="gallerie-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="" class="modal-img w-100" alt="">
+      </div>
+      <div class="modal-footer">
+        <p class="modal-img-legend"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
   <!-- Start footer -->
   <footer>
     <div class="container-fluid">
@@ -134,9 +132,9 @@
           <ul class="list-unstyled">
             <li class="nav-item"><a class="nav-link" href="/index.html">Accueil</a></li>
             <li class="nav-item"><a class="nav-link" href="/academie/">L'académie</a></li>
-            <li class="nav-item"><a class="nav-link active" href="/taekwondo/">Le taekwondo</a></li>
+            <li class="nav-item"><a class="nav-link" href="/taekwondo/">Le taekwondo</a></li>
             <li class="nav-item"><a class="nav-link" href="/evenements/">Evenements</a></li>
-            <li class="nav-item"><a class="nav-link" href="/galerie/">Galerie</a></li>
+            <li class="nav-item"><a class="nav-link active" href="/galerie/">Galerie</a></li>
             <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
           </ul>
         </div>
@@ -176,11 +174,11 @@
       </div>
     </div>
   </footer>
-
   <!-- END of footer -->
 
   <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   <script src="/assets/scripts/OnScroll.js"></script>
+  <script src="/assets/scripts/LightboxInModal.js"></script>
 </body>
 
 </html>

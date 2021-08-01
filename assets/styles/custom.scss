@@ -50,21 +50,21 @@
 $input-focus-border-color: $carnelian;  
 // $input-box-shadow: $imperial-red;
 $input-focus-box-shadow: none;
-//$accordion-button-active-bg:        theme-colors(--bs-carnelian);
 
-// @import "../../node_modules/bootstrap/scss/accordion";
+// Modifications on accordion component
+    // active bg-color
+    $accordion-button-active-bg:    $ruby-red;
+    // active color text
+    $accordion-button-active-color: $cultured;
+    // disabled shadow effect when active
+    $accordion-button-focus-box-shadow:none;
+    // Icon in not collapsed equal to active color text 
+    $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-button-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 
-// $accordion-button-color:        $imperial-red;
-
-// bg-color actif
-$accordion-button-active-bg:    $ruby-red;
-// text-color actif
-$accordion-button-active-color: $cultured;
-// effet d'ombre off
-$accordion-button-focus-box-shadow:none;
-// Icone de couleur = texte actif
-$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-button-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
-
+// Custom modal Lightbox
+    $modal-content-bg:                  $cultured;
+    $modal-backdrop-bg:                 $eerie-black;
+    $modal-backdrop-opacity:            .9;
 
 // Add all BS natives and overriden styles on my custom.css
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
@@ -196,6 +196,6 @@ footer {
     filter: grayscale(60%);
 }
 
-// .accordion-button:not(.collapsed)::after {
-//     background-image:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill=><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
-// }
+.modal-content{
+    filter: drop-shadow(0 0 0.55rem $silver-chalice);
+}

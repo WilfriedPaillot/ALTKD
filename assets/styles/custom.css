@@ -12731,16 +12731,6 @@ header .nav-link {
     letter-spacing: initial;
   }
 }
-@media screen and (min-width: 1440px) {
-  header {
-    background-image: url(../img/header/bg_header.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 35vh;
-    background-color: #222000;
-  }
-}
 .logo_sans_texte {
   position: relative;
   top: -5vh;
@@ -12816,4 +12806,22 @@ footer p {
 
 .modal-content {
   filter: drop-shadow(0 0 0.55rem #b1a7a6);
+}
+
+address h4, address .h4 {
+  font-family: "Special Elite", cursive;
+  font-weight: lighter;
+  letter-spacing: 1.25px;
+}
+
+article h5, article .h5 {
+  font-family: "Special Elite", cursive;
+  font-weight: lighter;
+  letter-spacing: 1.25px;
+}
+
+span .tags {
+  border: solid;
+  border-radius: 25px;
+  border-color: var(--bs-carnelian);
 }/*# sourceMappingURL=custom.css.map */

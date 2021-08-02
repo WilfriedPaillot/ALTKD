@@ -67,7 +67,8 @@
 
 <main>
 <!-- Début section Présentation -->   
-    <section class="row-cols-1 mt-4">
+    <section class="container">
+      <div class="row mt-4 mb-5">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title ms-n3">Présentation</h5>
@@ -93,17 +94,26 @@
           <a href="/academie/" class="card-link">En savoir plus</a>
         </div>
       </div>
-      <div
-        class="clefs text-cultured text-center d-flex flex-column justify-content-center align-items-center py-5 flex-lg-row justify-content-lg-around bg-carnelian">
-        <p class="py-2 nbr_clefs">90<br><span class="mots_clefs">licenciés</span></p>
-        <p class="py-2 nbr_clefs">45<br><span class="mots_clefs">femmes</span></p>
-        <p class="py-2 nbr_clefs">35<br><span class="mots_clefs">enfants</span></p>
-      </div>
+    </div>
     </section>
 <!-- Fin section Présentation -->
 
-<!-- Début section Qualités -->
-    <section class="row-cols-1 mt-4">
+<!-- Début bandeau rouge -->
+    <section class="container-fluid gx-0">
+      <div
+        class="clefs text-cultured text-center d-flex flex-column justify-content-center align-items-center py-5 flex-lg-row justify-content-lg-around bg-carnelian">
+        <p class="py-2">90<br><span>licenciés</span></p>
+        <p class="py-2">20<br><span>femmes</span></p>
+        <p class="py-2">35<br><span>enfants</span></p>
+      </div>
+    </section>
+<!-- Fin bandeau rouge -->
+
+<!-- Début section taekwondo -->
+    <section class="container">
+      <div class="row mt-5">
+
+      <div class="col-md-8">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title ms-n3">Le taekwondo</h5>
@@ -121,29 +131,36 @@
           </p>
           <a href="/taekwondo/" class="card-link">Plus d'infos</a>
         </div>
-        <div class="d-flex flex-row justify-content-around my-3">
-          <div class="d-flex flex-column text-center">
-            <figure class="bg-cultured rounded-circle border border-imperial-red d-flex align-items-center justify-content-center" style="width: 90px; height:90px;">
+      </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="d-flex flex-row justify-content-around  text-center my-3 flex-md-column align-content-md-around">
+          <div class="d-flex flex-column align-items-md-center mb-2">
+            <figure class="bg-cultured rounded-circle border border-imperial-red d-flex align-items-center justify-content-center mb-0" style="width: 90px; height:90px;">
               <img src="./assets/img/icons/entretenir.svg" alt="" class="img-fluid" style="width: 60px; height:60px;">
             </figure>
             <figcaption>S'entretenir</figcaption>        
           </div>
-          <div class="d-flex flex-column text-center">
-            <figure class="bg-cultured rounded-circle border border-imperial-red d-flex align-items-center justify-content-center" style="width: 90px; height:90px;">
+          <div class="d-flex flex-column align-items-md-end mb-md-2">
+            <figure class="bg-cultured rounded-circle border border-imperial-red d-flex align-items-center justify-content-center mb-0" style="width: 90px; height:90px;">
               <img src="./assets/img/icons/accessible.svg" alt="" class="img-fluid" style="width: 60px; height:60px;">
             </figure>
-            <figcaption>Accessible</figcaption>
+            <figcaption class="me-md-2">Accessible</figcaption>
           </div>
-          <div class="d-flex flex-column text-center">
-            <figure class="bg-cultured rounded-circle border border-imperial-red d-flex flex-column align-items-center justify-content-center" style="width: 90px; height:90px;">
+          <div class="d-flex flex-column align-items-md-center mb-2">
+            <figure class="bg-cultured rounded-circle border border-imperial-red d-flex flex-column align-items-center justify-content-center mb-0" style="width: 90px; height:90px;">
               <img src="./assets/img/icons/partager.svg" alt="..." class="img-fluid" style="width: 60px; height:60px;">
             </figure>
             <figcaption>Partager</figcaption>
           </div>
-        </div>
+        </div>  
       </div>
+
+      </div>
+    
     </section>
-<!-- Fin section Qualités -->
+<!-- Fin section taekwondo -->
 
 <!-- Début section Evenements -->
 <section class="row-cols-1 mt-4">

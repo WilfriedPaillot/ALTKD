@@ -79,7 +79,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 35vh;
+    height: 25vh;
 }
 
 .logo {
@@ -123,6 +123,14 @@ header .nav-link {
 }
 
 @media screen and (min-width:992px){
+    header {
+        background-image: url(../img/header/bg_header.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+    }
+
     // Retour à la gestion de l'affichage du menu collapsé par les classes BS
     header .navbar-collapse{
         position: static;

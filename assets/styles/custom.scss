@@ -218,6 +218,24 @@ main  {
         & p { font-size: 1.55rem; }        
         & span { font-size: 1.25rem; }
         }
+
+        .tenets {
+            & ul {
+                list-style: none;
+                & li {
+                    font-family: 'Special Elite', cursive;
+                    font-size: calc(1rem + 0.8vw);
+                    letter-spacing:2px;
+                    line-height: 0.8;
+                    padding: 0.8rem;
+                    & span {
+                        font-size: calc(0.65rem + 0.8vw);
+                        color: var(--bs-ruby-red);
+                    }
+                }
+            }
+        }
+
 }
 
 footer {

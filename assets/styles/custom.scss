@@ -169,6 +169,12 @@ header .nav-link {
 }
 
 main  {
+        h3.page-title {
+            font-family: 'Special Elite', cursive;
+            color: var(--bs-eerie-black); 
+            font-size: calc(1.85rem + 2vw);
+        }
+
         .card { 
             height: 100%;
             border-style: none; 

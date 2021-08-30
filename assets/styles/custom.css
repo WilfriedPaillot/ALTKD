@@ -12796,6 +12796,11 @@ header .nav-link {
   filter: drop-shadow(0px 0px 15px var(--bs-ruby-red));
 }
 
+main h3.page-title, main .page-title.h3 {
+  font-family: "Special Elite", cursive;
+  color: var(--bs-eerie-black);
+  font-size: calc(1.85rem + 2vw);
+}
 main .card {
   height: 100%;
   border-style: none;

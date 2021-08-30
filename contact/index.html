@@ -66,48 +66,51 @@
   </header>
 
 <main>
-  <section class="row-cols-1 my-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title ms-n3">Contactez-nous</h5>
-        <p class="card-text">
-          Contactez-nous en utilisant le formulaire ci-dessous, en précisant l’objet de votre message et vos coordonnées.<br> 
-          Nous vous recontacterons dans les plus brefs délais.
-        </p>
+  <div class="container">
+    <section class="row my-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title ms-n3 mt-4">Contactez-nous</h5>
+          <p class="card-text">
+            Contactez-nous en utilisant le formulaire ci-dessous, en précisant l’objet de votre message et vos coordonnées.<br> 
+            Nous vous recontacterons dans les plus brefs délais.
+          </p>
+        </div>
       </div>
+  <div class="row">
+    <div class="col-md-6 mx-auto mt-5">
+        <form class="d-flex flex-column align-items-stretch mt-3 mb-5">
+          <div class="mb-3 mx-3">
+            <label for="nom" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="nom" aria-describedby="nomHelp">
+            <div id="nomlHelp" class="form-text">Saisissez votre nom</div>
+          </div>
+          <div class="mb-3 mx-3">
+            <label for="prenom" class="form-label">Prenom</label>
+            <input type="text" class="form-control" id="prenom" aria-describedby="prenomHelp">
+            <div id="prenomHelp" class="form-text">Saisissez votre prénom</div>
+          </div>
+          <div class="mb-3 mx-3">
+            <label for="Email" class="form-label">Adresse mail</label>
+            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Saisissez une adresse mail valide</div>
+          </div>
+          <div class="mb-3 mx-3">
+            <label for="telephone" class="form-label">Numéro de téléphone</label>
+            <input type="tel" class="form-control" id="telephone">
+          </div>
+          <div class="mb-3 mx-3">
+            <label for="msg">Message :</label>
+            <textarea id="msg" name="message" class="form-control"></textarea>
+          </div>
+          <button type="submit" class="btn btn-carnelian align-self-center">Envoyer</button>
+        </form>
     </div>
-<div class="row-cols-1">
-  <div class="col-md-6">
-      <form class="d-flex flex-column align-items-stretch mt-3 mb-5">
-        <div class="mb-3 mx-3">
-          <label for="nom" class="form-label">Nom</label>
-          <input type="text" class="form-control" id="nom" aria-describedby="nomHelp">
-          <div id="nomlHelp" class="form-text">Saisissez votre nom</div>
-        </div>
-        <div class="mb-3 mx-3">
-          <label for="prénom" class="form-label">Prénom</label>
-          <input type="text" class="form-control" id="prénom" aria-describedby="prénomHelp">
-          <div id="prénomHelp" class="form-text">Saisissez votre prénom</div>
-        </div>
-        <div class="mb-3 mx-3">
-          <label for="Email" class="form-label">Adresse mail</label>
-          <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">Saisissez une adresse mail valide</div>
-        </div>
-        <div class="mb-3 mx-3">
-          <label for="téléphone" class="form-label">Numéro de téléphone</label>
-          <input type="tel" class="form-control" id="téléphone">
-        </div>
-        <div class="mb-3 mx-3">
-          <label for="msg">Message :</label>
-          <textarea id="msg" name="message" class="form-control"></textarea>
-        </div>
-        <button type="submit" class="btn btn-carnelian align-self-center">Envoyer</button>
-      </form>
   </div>
-</div>
 
-  </section>
+    </section>    
+  </div>
+
 <br>
 </main>
   <!-- Start footer -->

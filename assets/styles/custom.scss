@@ -30,7 +30,7 @@
 
     // Change default font family
     $font-family-sans-serif: 'Merriweather', serif;
-    
+
     // Merge 2 maps in 1
     $theme-colors: map-merge($theme-colors, $new-colors);
 
@@ -173,11 +173,11 @@ header .nav-link {
 }
 
 main  {
-        // .page-title { 
-        //     font-family: 'Special Elite', cursive;
-        //     font-size: calc(1.85rem + 2vw);
-        //     color: var(--bs-eerie-black);
-        // }
+        h2.page-title {
+            font-family: 'Special Elite', cursive;
+            color: var(--bs-eerie-black); 
+            font-size: calc(1.85rem + 2vw);
+        }
 
         article {
             & h2.article-title {
@@ -189,7 +189,6 @@ main  {
                 font-size: 1.55rem;
             }
             & p.article-text{
-                // font-family: 'Merriweather', serif;
                 & strong, b {
                 color: var(--bs-blood-red);
                 }
@@ -200,45 +199,40 @@ main  {
                 &:visited { color: var(--bs-blood-red); } 
             }
         }
-        h2.page-title {
-            font-family: 'Special Elite', cursive;
-            color: var(--bs-eerie-black); 
-            font-size: calc(1.85rem + 2vw);
+
+
+        .card { 
+            height: 100%;
+            border-style: none; 
+
+            & .card-body {
+                flex-grow: 1;
+            
+                & h5.card-title  { 
+                    font-family: 'Special Elite', cursive;
+                    color: var(--bs-eerie-black); 
+                    font-size: calc(1.50rem + 1vw);
+                }
+
+                & h6.card-subtitle  { 
+                    font-size: 1.25rem;
+                }
+
+                & a.card-link {
+                    color: var(--bs-carnelian);
+                        &:hover { color: var(--bs-blood-red); }
+                        &:visited { color: var(--bs-blood-red); }        
+                    }
+            }
+
+            & .card-footer {
+                display: flex;
+                justify-content: center;
+                background-color: transparent;
+                border-style: none;
+            }
+            
         }
-
-        // .card { 
-        //     height: 100%;
-        //     border-style: none; 
-
-        //     & .card-body {
-        //         flex-grow: 1;
-            
-        //         & h5.card-title  { 
-        //             font-family: 'Special Elite', cursive;
-        //             color: var(--bs-eerie-black); 
-        //             // font-size: 1.85rem;
-        //             font-size: calc(1.85rem + 2vw);
-        //         }
-
-        //         & h6.card-subtitle  { 
-        //             font-size: 1.25rem;
-        //         }
-
-        //         & a.card-link {
-        //             color: var(--bs-carnelian);
-        //                 &:hover { color: var(--bs-blood-red); }
-        //                 &:visited { color: var(--bs-blood-red); }        
-        //             }
-        //     }
-
-        //     & .card-footer {
-        //         display: flex;
-        //         justify-content: center;
-        //         background-color: transparent;
-        //         border-style: none;
-        //     }
-            
-        // }
         
         .clefs {
             height: 35vh;
@@ -304,18 +298,18 @@ address {
     }
 }
 
-article h5 {
-    font-family: 'Special Elite', cursive; 
-    font-weight: lighter;
-    letter-spacing: 1.25px;
-}
+// article h5 {
+//     font-family: 'Special Elite', cursive; 
+//     font-weight: lighter;
+//     letter-spacing: 1.25px;
+// }
 
 
-span {
-    & .tags {
-        border: solid;
-        border-radius: 25px;
-        border-color: var(--bs-carnelian);        
-    }
+// span {
+//     & .tags {
+//         border: solid;
+//         border-radius: 25px;
+//         border-color: var(--bs-carnelian);        
+//     }
 
-}
+// }

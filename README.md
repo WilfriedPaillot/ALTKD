@@ -1,18 +1,51 @@
-# Académie Lamottoise de taekwondo
+# ALTKD - Académie Lamottoise de taekwondo
 
-## Réalisation d'un site statique pour l'académie Lamottoise de taekwondo
+## Évaluation d'entrainement :
 
-### Contexte
+Réalisation d'un site statique pour une association
 
-Le contexte initial est de réaliser un site statique avec un framework CSS pour l'évaluation 1 de Studi, en préparation du titre professionnel "Développeur Web et Web mobile".
-Les attentes étant de présenter un site pour une association, j'ai proposé au président de l'association ALTKD, afin de travailler sur un véritable projet, de remplir les obligations de cette épreuve tout en leur offrant un site vitrine.
-Après un bref entretien, nous nous sommes mis d'accord sur les attentes spécifiques et les contraintes techniques. Après avoir réalisé un bref wireframe, puis une maquette sous Figma, il est temps de passer à la conception.
+Version: GDWFSHTMLCSSBOOTEXAIII1A
 
-## Environement
+
+### Livrable attendu pour l’examen de ce bloc
+
+Création d’un petit jeu sur navigateur web à l’aide du DOM.
+En fin de prestation, le commanditaire doit recevoir les différents éléments suivants :
+- Un jeu fonctionnel
+- Une interface lisible qui correspond à la maquette fournie.
+Ceci implique plusieurs fonctionnalités globales :
+En front-desk (côté client) :
+- La possibilité de créer une nouvelle partie
+- La possibilité de retenir le score courant
+- La possibilité de lancer le dé
+- La possibilité d’avoir 2 joueurs
+
+### Contexte du projet
+
+Un site internet présente de nombreux intérêts pour une association, surtout en termes de visibilité (c’est
+à vous de choisir une association, qu’elle soit réelle ou fictive, l’important sera votre code).
+Le site devra au minimum contenir 2 pages :
+
+• Une page relative à l’association.
+
+• Une page publicitaire des événements à l'échelle national (Vous choisissez le thème de l’événement, la
+date, les détails).
+
+Bien entendu le site devra être responsive et à la demande du client l'interface devra être pensée mobile
+first !
+
+## Environnement de développement
+
+Environnement système : Windows 10
+
+Editeur : VS Code 
 
 ```bash
-
-npm install boostrap
-npm install boostrap-icons
-
+npm install bootstrap
+npm install bootstrap-icons
 ```
+## Rendu final
+![Menu mobile](./assets/img/github/menu_mobile.png "ALTK")
+
+![Académie](./assets/img/github/académie_desktop.png "ALTK")
+

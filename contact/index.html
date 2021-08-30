@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/assets/styles/custom.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/styles/custom.css">
   <title>ALTKD</title>
 </head>
 
@@ -15,8 +15,8 @@
     <!-- Start of navbar -->
     <nav id="navigation" class="navbar navbar-expand-lg navbar-dark bg-transparent">
       <div class="container-fluid">
-        <a class="navbar-brand py-0 me-0" href="/index.html" title="Retour à l'accueil">
-          <img src="/assets/img/header/logo.svg" class="logo" alt="Logo ALTKD">
+        <a class="navbar-brand py-0 me-0" href="../index.html" title="Retour à l'accueil">
+          <img src="../assets/img/header/logo.svg" class="logo" alt="Logo ALTKD">
         </a>
         <button class="navbar-toggler pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,26 +25,26 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarText">
           <div class="text-center pt-2 d-lg-none">
-            <img src="/assets/img/header/logo.svg" class="logo overlay" alt="Logo ALTKD" href="/index.html">
+            <img src="../assets/img/header/logo.svg" class="logo overlay" alt="Logo ALTKD" href="../index.html">
           </div>
           <ul class="navbar-nav align-items-center mt-5 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="/index.html" title="Accueil">Accueil</a>
+              <a class="nav-link" href="../index.html" title="Accueil">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/academie/" title="L'académie">L'académie</a>
+              <a class="nav-link" href="../academie/" title="L'académie">L'académie</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/taekwondo/" title="Le taekwondo">Le taekwondo</a>
+              <a class="nav-link" href="../taekwondo/" title="Le taekwondo">Le taekwondo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/evenements/" title="Evenements">Evenements</a>
+              <a class="nav-link" href="../evenements/" title="Evenements">Evenements</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/galerie/" title="Galerie">Galerie</a>
+              <a class="nav-link" href="../galerie/" title="Galerie">Galerie</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/contact/" title="Contact">Contact</a>
+              <a class="nav-link active" href="../contact/" title="Contact">Contact</a>
             </li>
             <span class="mt-5 fs-5 text-cultured d-lg-none">Informations pratiques</span>
             <li class="nav-item">
@@ -66,48 +66,51 @@
   </header>
 
 <main>
-  <section class="row-cols-1 my-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title ms-n3">Contactez-nous</h5>
-        <p class="card-text">
-          Contactez-nous en utilisant le formulaire ci-dessous, en précisant l’objet de votre message et vos coordonnées.<br> 
-          Nous vous recontacterons dans les plus brefs délais.
-        </p>
+  <div class="container">
+    <section class="row my-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title ms-n3 mt-4">Contactez-nous</h5>
+          <p class="card-text">
+            Contactez-nous en utilisant le formulaire ci-dessous, en précisant l’objet de votre message et vos coordonnées.<br> 
+            Nous vous recontacterons dans les plus brefs délais.
+          </p>
+        </div>
       </div>
+  <div class="row">
+    <div class="col-md-6 mx-auto mt-5">
+        <form class="d-flex flex-column align-items-stretch mt-3 mb-5">
+          <div class="mb-3 mx-3">
+            <label for="nom" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="nom" aria-describedby="nomHelp">
+            <div id="nomlHelp" class="form-text">Saisissez votre nom</div>
+          </div>
+          <div class="mb-3 mx-3">
+            <label for="prenom" class="form-label">Prenom</label>
+            <input type="text" class="form-control" id="prenom" aria-describedby="prenomHelp">
+            <div id="prenomHelp" class="form-text">Saisissez votre prénom</div>
+          </div>
+          <div class="mb-3 mx-3">
+            <label for="Email" class="form-label">Adresse mail</label>
+            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Saisissez une adresse mail valide</div>
+          </div>
+          <div class="mb-3 mx-3">
+            <label for="telephone" class="form-label">Numéro de téléphone</label>
+            <input type="tel" class="form-control" id="telephone">
+          </div>
+          <div class="mb-3 mx-3">
+            <label for="msg">Message :</label>
+            <textarea id="msg" name="message" class="form-control"></textarea>
+          </div>
+          <button type="submit" class="btn btn-carnelian align-self-center">Envoyer</button>
+        </form>
     </div>
-<div class="row-cols-1">
-  <div class="col-md-6">
-      <form class="d-flex flex-column align-items-stretch mt-3 mb-5">
-        <div class="mb-3 mx-3">
-          <label for="nom" class="form-label">Nom</label>
-          <input type="text" class="form-control" id="nom" aria-describedby="nomHelp">
-          <div id="nomlHelp" class="form-text">Saisissez votre nom</div>
-        </div>
-        <div class="mb-3 mx-3">
-          <label for="prénom" class="form-label">Prénom</label>
-          <input type="text" class="form-control" id="prénom" aria-describedby="prénomHelp">
-          <div id="prénomHelp" class="form-text">Saisissez votre prénom</div>
-        </div>
-        <div class="mb-3 mx-3">
-          <label for="Email" class="form-label">Adresse mail</label>
-          <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">Saisissez une adresse mail valide</div>
-        </div>
-        <div class="mb-3 mx-3">
-          <label for="téléphone" class="form-label">Numéro de téléphone</label>
-          <input type="tel" class="form-control" id="téléphone">
-        </div>
-        <div class="mb-3 mx-3">
-          <label for="msg">Message :</label>
-          <textarea id="msg" name="message" class="form-control"></textarea>
-        </div>
-        <button type="submit" class="btn btn-carnelian align-self-center">Envoyer</button>
-      </form>
   </div>
-</div>
 
-  </section>
+    </section>    
+  </div>
+
 <br>
 </main>
   <!-- Start footer -->
@@ -115,19 +118,19 @@
     <div class="container-fluid">
       <div class="row bg-eerie-black text-white">
         <div class="col-12 mb-3">
-          <span class="d-flex justify-content-center logo_sans_texte bg-eerie-black rounded-circle" href="/index.html">
-            <img src="/assets/img/footer/logo_sans_texte.svg" class="test">
+          <span class="d-flex justify-content-center logo_sans_texte bg-eerie-black rounded-circle" href="../index.html">
+            <img src="../assets/img/footer/logo_sans_texte.svg" class="test">
           </span>
         </div>
         <div class="col-md-6 col-lg-3 d-flex flex-column text-center mt-n4 mt-md-3">
           <h5>Navigation</h5>
           <ul class="list-unstyled">
-            <li class="nav-item"><a class="nav-link" href="/index.html">Accueil</a></li>
-            <li class="nav-item"><a class="nav-link" href="/academie/">L'académie</a></li>
-            <li class="nav-item"><a class="nav-link" href="/taekwondo/">Le taekwondo</a></li>
-            <li class="nav-item"><a class="nav-link" href="/evenements/">Evenements</a></li>
-            <li class="nav-item"><a class="nav-link" href="/galerie/">Galerie</a></li>
-            <li class="nav-item"><a class="nav-link active" href="/contact/">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="../academie/">L'académie</a></li>
+            <li class="nav-item"><a class="nav-link" href="../taekwondo/">Le taekwondo</a></li>
+            <li class="nav-item"><a class="nav-link" href="../evenements/">Evenements</a></li>
+            <li class="nav-item"><a class="nav-link" href="../galerie/">Galerie</a></li>
+            <li class="nav-item"><a class="nav-link active" href="../contact/">Contact</a></li>
           </ul>
         </div>
         <div class="col-md-6 col-lg-3 d-flex flex-column text-center mt-2 mt-md-3">
@@ -153,7 +156,7 @@
           <h5>Partenariat</h5>
           <a class="d-flex justify-content-center" title="Partenaire spécialiste du surplus militaire" target="_blank"
             href="https://www.kaki-orleans.com/">
-            <img src="/assets/img/footer/partenaire_kaki.svg" class="rounded-circle border border-imperial-red"
+            <img src="../assets/img/footer/partenaire_kaki.svg" class="rounded-circle border border-imperial-red"
               alt="Logo de notre partenaire Orléanais">
           </a>
         </div>
@@ -169,8 +172,8 @@
 
   <!-- END of footer -->
 
-  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  <script src="/assets/scripts/OnScroll.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="../assets/scripts/OnScroll.js"></script>
 </body>
 
 </html>

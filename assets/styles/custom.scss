@@ -27,6 +27,10 @@
     "light-gray": $light-gray,
     "cultured": $cultured
     );
+
+    // Change default font family
+    $font-family-sans-serif: 'Merriweather', serif;
+
     // Merge 2 maps in 1
     $theme-colors: map-merge($theme-colors, $new-colors);
 
@@ -142,7 +146,7 @@ header .nav-link {
     //Retour à la gestion de l'affichage géré par BS
     header .nav-link {
         line-height: initial;
-        font-size:initial;
+        font-size: 1.25rem;
         letter-spacing: initial;
     }
 
@@ -169,11 +173,33 @@ header .nav-link {
 }
 
 main  {
-        h3.page-title {
+        h2.page-title {
             font-family: 'Special Elite', cursive;
             color: var(--bs-eerie-black); 
             font-size: calc(1.85rem + 2vw);
         }
+
+        article {
+            & h2.article-title {
+                font-family: 'Special Elite', cursive;
+                font-size: calc(1.85rem + 2vw);
+                color: var(--bs-eerie-black);
+            }
+            & h3.article-subtitle {
+                font-size: 1.55rem;
+            }
+            & p.article-text{
+                & strong, b {
+                color: var(--bs-blood-red);
+                }
+            }
+            & a.article-link {
+                color: var(--bs-carnelian);
+                &:hover { color: var(--bs-blood-red); }
+                &:visited { color: var(--bs-blood-red); } 
+            }
+        }
+
 
         .card { 
             height: 100%;
@@ -185,8 +211,7 @@ main  {
                 & h5.card-title  { 
                     font-family: 'Special Elite', cursive;
                     color: var(--bs-eerie-black); 
-                    // font-size: 1.85rem;
-                    font-size: calc(1.85rem + 2vw);
+                    font-size: calc(1.50rem + 1vw);
                 }
 
                 & h6.card-subtitle  { 
@@ -273,18 +298,18 @@ address {
     }
 }
 
-article h5 {
-    font-family: 'Special Elite', cursive; 
-    font-weight: lighter;
-    letter-spacing: 1.25px;
-}
+// article h5 {
+//     font-family: 'Special Elite', cursive; 
+//     font-weight: lighter;
+//     letter-spacing: 1.25px;
+// }
 
 
-span {
-    & .tags {
-        border: solid;
-        border-radius: 25px;
-        border-color: var(--bs-carnelian);        
-    }
+// span {
+//     & .tags {
+//         border: solid;
+//         border-radius: 25px;
+//         border-color: var(--bs-carnelian);        
+//     }
 
-}
+// }

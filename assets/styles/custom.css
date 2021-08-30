@@ -37,7 +37,7 @@
   --bs-silver-chalice: #b1a7a6;
   --bs-light-gray: lightgray;
   --bs-cultured: #f5f3f4;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Merriweather", serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
@@ -12774,7 +12774,7 @@ header .nav-link {
 
   header .nav-link {
     line-height: initial;
-    font-size: initial;
+    font-size: 1.25rem;
     letter-spacing: initial;
   }
 
@@ -12796,10 +12796,30 @@ header .nav-link {
   filter: drop-shadow(0px 0px 15px var(--bs-ruby-red));
 }
 
-main h3.page-title, main .page-title.h3 {
+main h2.page-title, main .page-title.h2 {
   font-family: "Special Elite", cursive;
   color: var(--bs-eerie-black);
   font-size: calc(1.85rem + 2vw);
+}
+main article h2.article-title, main article .article-title.h2 {
+  font-family: "Special Elite", cursive;
+  font-size: calc(1.85rem + 2vw);
+  color: var(--bs-eerie-black);
+}
+main article h3.article-subtitle, main article .article-subtitle.h3 {
+  font-size: 1.55rem;
+}
+main article p.article-text strong, main article p.article-text b {
+  color: var(--bs-blood-red);
+}
+main article a.article-link {
+  color: var(--bs-carnelian);
+}
+main article a.article-link:hover {
+  color: var(--bs-blood-red);
+}
+main article a.article-link:visited {
+  color: var(--bs-blood-red);
 }
 main .card {
   height: 100%;
@@ -12811,7 +12831,7 @@ main .card .card-body {
 main .card .card-body h5.card-title, main .card .card-body .card-title.h5 {
   font-family: "Special Elite", cursive;
   color: var(--bs-eerie-black);
-  font-size: calc(1.85rem + 2vw);
+  font-size: calc(1.50rem + 1vw);
 }
 main .card .card-body h6.card-subtitle, main .card .card-body .card-subtitle.h6 {
   font-size: 1.25rem;
@@ -12896,16 +12916,4 @@ address h4, address .h4 {
   font-family: "Special Elite", cursive;
   font-weight: lighter;
   letter-spacing: 1.25px;
-}
-
-article h5, article .h5 {
-  font-family: "Special Elite", cursive;
-  font-weight: lighter;
-  letter-spacing: 1.25px;
-}
-
-span .tags {
-  border: solid;
-  border-radius: 25px;
-  border-color: var(--bs-carnelian);
 }/*# sourceMappingURL=custom.css.map */

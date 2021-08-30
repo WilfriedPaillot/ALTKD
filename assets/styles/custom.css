@@ -12804,6 +12804,9 @@ main article h2.article-title, main article .article-title.h2 {
 main article h3.article-subtitle, main article .article-subtitle.h3 {
   font-size: 1.55rem;
 }
+main article p.article-text strong, main article p.article-text b {
+  color: var(--bs-blood-red);
+}
 main article a.article-link {
   color: var(--bs-carnelian);
 }

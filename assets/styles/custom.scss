@@ -184,9 +184,11 @@ main  {
             & h3.article-subtitle {
                 font-size: 1.55rem;
             }
-            // & p.article-texte {
-            //     font-family: 'Special Elite', cursive;
-            // }
+            & p.article-text{
+                & strong, b {
+                color: var(--bs-blood-red);
+                }
+            }
             & a.article-link {
                 color: var(--bs-carnelian);
                 &:hover { color: var(--bs-blood-red); }

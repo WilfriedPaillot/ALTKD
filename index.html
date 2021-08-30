@@ -99,11 +99,11 @@
 
       <div class="d-none d-md-block col-md-6">
         <div class="d-flex justify-content-center align-items-center h-100">
-          <div class=" d-flex flex-column justify-content-center align-items-center py-5 bg-carnelian w-50">
-            <div class="clefs text-cultured text-center">
-              <p class="py-2 nbr_clefs">90<br><span class="mots_clefs">licenciés</span></p>
-              <p class="py-2 nbr_clefs">45<br><span class="mots_clefs">femmes</span></p>
-              <p class="py-2 nbr_clefs">35<br><span class="mots_clefs">enfants</span></p>
+          <div class=" d-flex flex-column justify-content-center align-items-center py-5 bg-carnelian w-100 red-zone">
+            <div class="d-flex flex-column justify-content-between clefs text-cultured text-center">
+              <p class="py-2 my-auto nbr_clefs">90<br><span class="mots_clefs">licenciés</span></p>
+              <p class="py-2 my-auto nbr_clefs">45<br><span class="mots_clefs">femmes</span></p>
+              <p class="py-2 my-auto nbr_clefs">35<br><span class="mots_clefs">enfants</span></p>
             </div>           
           </div>          
         </div>
@@ -112,12 +112,12 @@
   </section>
 <!-- Fin section Présentation -->
 
-<!-- Bandeau à partir de MD -->
+<!-- Bandeau jusqu'à MD -->
 <section class="container-fluid px-0">
   <div class="d-md-none">
   <div class="d-flex justify-content-center align-items-center">
     <div class=" d-flex flex-column justify-content-center align-items-center py-5 bg-carnelian w-100">
-      <div class="clefs text-cultured text-center">
+      <div class="d-flex flex-column justify-content-between clefs text-cultured text-center">
         <p class="py-2 nbr_clefs">90<br><span class="mots_clefs">licenciés</span></p>
         <p class="py-2 nbr_clefs">45<br><span class="mots_clefs">femmes</span></p>
         <p class="py-2 nbr_clefs">35<br><span class="mots_clefs">enfants</span></p>
@@ -126,12 +126,13 @@
   </div>
 </div>
 </section>
-<!-- Fin du bandeau MD -->
+<!-- Fin du bandeau -->
 
 <!-- Début section taekwondo -->
     <section class="container">
 <div class="row mt-4">
-      <div class="col-md-6 order-md-1">
+
+      <div class="col-md-6">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title ms-n3">Le taekwondo</h5>
@@ -152,7 +153,36 @@
     </div>
   </div>
 
-      <div class="col-md-6 order-md-0">
+  <div class="col-md-6">
+   <div class="d-flex justify-content-center align-items-center">
+      <div class="d-flex flex-row justify-content-center align-items-center my-3">
+        <img src="./assets/img/pages/jeune-taekwondoiste.jpg" class="w-100" alt="">
+      </div>     
+   </div>
+
+    <!-- <div class="d-flex flex-row justify-content-around  text-center my-3 flex-md-column align-content-md-around">
+    <div class="d-flex flex-column align-items-md-center mb-2">
+        <figure class="bg-cultured rounded-circle border border-imperial-red d-flex align-items-center justify-content-center mb-0" style="width: 90px; height:90px;">
+          <img src="./assets/img/icons/entretenir.svg" alt="" class="img-fluid" style="width: 60px; height:60px;">
+        </figure>
+        <figcaption>S'entretenir</figcaption>        
+      </div>
+      <div class="d-flex flex-column align-items-md-start mb-md-2">
+        <figure class="bg-cultured rounded-circle border border-imperial-red d-flex align-items-center justify-content-center mb-0" style="width: 90px; height:90px;">
+          <img src="./assets/img/icons/accessible.svg" alt="" class="img-fluid" style="width: 60px; height:60px;">
+        </figure>
+        <figcaption class="me-md-2">Accessible</figcaption>
+      </div>
+      <div class="d-flex flex-column align-items-md-center mb-2">
+        <figure class="bg-cultured rounded-circle border border-imperial-red d-flex flex-column align-items-center justify-content-center mb-0" style="width: 90px; height:90px;">
+          <img src="./assets/img/icons/partager.svg" alt="..." class="img-fluid" style="width: 60px; height:60px;">
+        </figure>
+        <figcaption>Partager</figcaption>
+      </div>
+    </div>   -->
+  </div>
+
+      <!-- <div class="col-md-6 order-md-0">
         <div class="d-flex justify-content-around my-3">
           <div class="d-flex flex-column text-center">
             <figure class="bg-cultured rounded-circle border border-imperial-red d-flex align-items-center justify-content-center" style="width: 90px; height:90px;">
@@ -173,7 +203,7 @@
             <figcaption>Partager</figcaption>
           </div>
         </div>
-      </div>
+      </div> -->
 </div>
 </div>
     </div>
@@ -199,8 +229,8 @@
     </div>
 
     <div class="col-md-6">
-    <div class="d-flex flex-row justify-content-around my-3">
-      <img src="./assets/img/pages/evenements/initiation-taekwondo-estivales.png" alt="">
+    <div class="d-flex flex-row justify-content-center my-3">
+      <img src="./assets/img/pages/evenements/dojo-judo.jpg" class="w-100" alt="">
     </div>
     </div>
 
@@ -233,17 +263,20 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+
         <div class="carousel-inner pt-2 pb-5">
           <div class="carousel-item active">
-            <img src="./assets/img/pages/galerie/jury/108200267_128706638910976_2293154201236084460_n.jpg" class="d-block w-100" alt="...">
+            <img src="./assets/img/pages/galerie/jury/108200267_128706638910976_2293154201236084460_n.jpg" class="d-block w-100 mx-auto" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./assets/img/pages/galerie/jury/110240862_280054776608127_1982665219093720792_n.jpg" class="d-block w-100" alt="...">
+            <img src="./assets/img/pages/galerie/jury/110240862_280054776608127_1982665219093720792_n.jpg" class="d-block w-100 mx-auto" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./assets/img/pages/galerie/jury/IMG_0183.jpg" class="d-block w-100" alt="...">
+            <img src="./assets/img/pages/galerie/jury/IMG_0183.jpg" class="d-block w-100 mx-auto" alt="...">
           </div>
-        </div>   
+      </div> 
+
+  
     </div>      
     </div>
 

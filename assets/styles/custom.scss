@@ -144,6 +144,16 @@ header .nav-link {
         font-size:initial;
         letter-spacing: initial;
     }
+
+    main{
+        & section img {
+            max-width: 75%;
+        }
+        .red-zone {
+            max-width: 75%;
+        }
+    }
+
 }
 
 .logo_sans_texte {
@@ -163,7 +173,8 @@ main  {
         h5.card-title  { 
             font-family: 'Special Elite', cursive;
             color: var(--bs-eerie-black); 
-            font-size: 1.85rem;
+            // font-size: 1.85rem;
+            font-size: calc(1.85rem + 2vw);
         }
         h6.card-subtitle  { 
             font-size: 1.25rem;

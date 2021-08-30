@@ -12777,6 +12777,13 @@ header .nav-link {
     font-size: initial;
     letter-spacing: initial;
   }
+
+  main section img {
+    max-width: 75%;
+  }
+  main .red-zone {
+    max-width: 75%;
+  }
 }
 .logo_sans_texte {
   position: relative;
@@ -12795,7 +12802,7 @@ main .card {
 main h5.card-title, main .card-title.h5 {
   font-family: "Special Elite", cursive;
   color: var(--bs-eerie-black);
-  font-size: 1.85rem;
+  font-size: calc(1.85rem + 2vw);
 }
 main h6.card-subtitle, main .card-subtitle.h6 {
   font-size: 1.25rem;

@@ -169,45 +169,69 @@ header .nav-link {
 }
 
 main  {
-        h3.page-title {
+        // .page-title { 
+        //     font-family: 'Special Elite', cursive;
+        //     font-size: calc(1.85rem + 2vw);
+        //     color: var(--bs-eerie-black);
+        // }
+
+        article {
+            & h2.article-title {
+                font-family: 'Special Elite', cursive;
+                font-size: calc(1.85rem + 2vw);
+                color: var(--bs-eerie-black);
+            }
+            & h3.article-subtitle {
+                font-size: 1.55rem;
+            }
+            // & p.article-texte {
+            //     font-family: 'Special Elite', cursive;
+            // }
+            & a.article-link {
+                color: var(--bs-carnelian);
+                &:hover { color: var(--bs-blood-red); }
+                &:visited { color: var(--bs-blood-red); } 
+            }
+        }
+        h2.page-title {
             font-family: 'Special Elite', cursive;
             color: var(--bs-eerie-black); 
             font-size: calc(1.85rem + 2vw);
         }
 
-        .card { 
-            height: 100%;
-            border-style: none; 
+        // .card { 
+        //     height: 100%;
+        //     border-style: none; 
 
-            & .card-body {
-                flex-grow: 1;
+        //     & .card-body {
+        //         flex-grow: 1;
             
-                & h5.card-title  { 
-                    font-family: 'Special Elite', cursive;
-                    color: var(--bs-eerie-black); 
-                    // font-size: 1.85rem;
-                    font-size: calc(1.85rem + 2vw);
-                }
+        //         & h5.card-title  { 
+        //             font-family: 'Special Elite', cursive;
+        //             color: var(--bs-eerie-black); 
+        //             // font-size: 1.85rem;
+        //             font-size: calc(1.85rem + 2vw);
+        //         }
 
-                & h6.card-subtitle  { 
-                    font-size: 1.25rem;
-                }
+        //         & h6.card-subtitle  { 
+        //             font-size: 1.25rem;
+        //         }
 
-                & a.card-link {
-                    color: var(--bs-carnelian);
-                        &:hover { color: var(--bs-blood-red); }
-                        &:visited { color: var(--bs-blood-red); }        
-                    }
-            }
+        //         & a.card-link {
+        //             color: var(--bs-carnelian);
+        //                 &:hover { color: var(--bs-blood-red); }
+        //                 &:visited { color: var(--bs-blood-red); }        
+        //             }
+        //     }
 
-            & .card-footer {
-                display: flex;
-                justify-content: center;
-                background-color: transparent;
-                border-style: none;
-            }
+        //     & .card-footer {
+        //         display: flex;
+        //         justify-content: center;
+        //         background-color: transparent;
+        //         border-style: none;
+        //     }
             
-        }
+        // }
         
         .clefs {
             height: 35vh;

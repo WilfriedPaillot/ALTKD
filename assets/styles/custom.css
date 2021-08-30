@@ -12796,40 +12796,27 @@ header .nav-link {
   filter: drop-shadow(0px 0px 15px var(--bs-ruby-red));
 }
 
-main h3.page-title, main .page-title.h3 {
+main article h2.article-title, main article .article-title.h2 {
   font-family: "Special Elite", cursive;
-  color: var(--bs-eerie-black);
   font-size: calc(1.85rem + 2vw);
-}
-main .card {
-  height: 100%;
-  border-style: none;
-}
-main .card .card-body {
-  flex-grow: 1;
-}
-main .card .card-body h5.card-title, main .card .card-body .card-title.h5 {
-  font-family: "Special Elite", cursive;
   color: var(--bs-eerie-black);
-  font-size: calc(1.85rem + 2vw);
 }
-main .card .card-body h6.card-subtitle, main .card .card-body .card-subtitle.h6 {
-  font-size: 1.25rem;
+main article h3.article-subtitle, main article .article-subtitle.h3 {
+  font-size: 1.55rem;
 }
-main .card .card-body a.card-link {
+main article a.article-link {
   color: var(--bs-carnelian);
 }
-main .card .card-body a.card-link:hover {
+main article a.article-link:hover {
   color: var(--bs-blood-red);
 }
-main .card .card-body a.card-link:visited {
+main article a.article-link:visited {
   color: var(--bs-blood-red);
 }
-main .card .card-footer {
-  display: flex;
-  justify-content: center;
-  background-color: transparent;
-  border-style: none;
+main h2.page-title, main .page-title.h2 {
+  font-family: "Special Elite", cursive;
+  color: var(--bs-eerie-black);
+  font-size: calc(1.85rem + 2vw);
 }
 main .clefs {
   height: 35vh;

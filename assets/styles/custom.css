@@ -12797,24 +12797,34 @@ header .nav-link {
 }
 
 main .card {
+  height: 100%;
   border-style: none;
 }
-main h5.card-title, main .card-title.h5 {
+main .card .card-body {
+  flex-grow: 1;
+}
+main .card .card-body h5.card-title, main .card .card-body .card-title.h5 {
   font-family: "Special Elite", cursive;
   color: var(--bs-eerie-black);
   font-size: calc(1.85rem + 2vw);
 }
-main h6.card-subtitle, main .card-subtitle.h6 {
+main .card .card-body h6.card-subtitle, main .card .card-body .card-subtitle.h6 {
   font-size: 1.25rem;
 }
-main a.card-link {
+main .card .card-body a.card-link {
   color: var(--bs-carnelian);
 }
-main a.card-link:hover {
+main .card .card-body a.card-link:hover {
   color: var(--bs-blood-red);
 }
-main a.card-link:visited {
+main .card .card-body a.card-link:visited {
   color: var(--bs-blood-red);
+}
+main .card .card-footer {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border-style: none;
 }
 main .clefs {
   height: 35vh;

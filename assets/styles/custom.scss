@@ -169,22 +169,39 @@ header .nav-link {
 }
 
 main  {
-        .card { border-style: none; }
-        
-        h5.card-title  { 
-            font-family: 'Special Elite', cursive;
-            color: var(--bs-eerie-black); 
-            // font-size: 1.85rem;
-            font-size: calc(1.85rem + 2vw);
-        }
-        h6.card-subtitle  { 
-            font-size: 1.25rem;
-        }
-        & a.card-link {
-            color: var(--bs-carnelian);
-                &:hover { color: var(--bs-blood-red); }
-                &:visited { color: var(--bs-blood-red); }        
+        .card { 
+            height: 100%;
+            border-style: none; 
+
+            & .card-body {
+                flex-grow: 1;
+            
+                & h5.card-title  { 
+                    font-family: 'Special Elite', cursive;
+                    color: var(--bs-eerie-black); 
+                    // font-size: 1.85rem;
+                    font-size: calc(1.85rem + 2vw);
+                }
+
+                & h6.card-subtitle  { 
+                    font-size: 1.25rem;
+                }
+
+                & a.card-link {
+                    color: var(--bs-carnelian);
+                        &:hover { color: var(--bs-blood-red); }
+                        &:visited { color: var(--bs-blood-red); }        
+                    }
             }
+
+            & .card-footer {
+                display: flex;
+                justify-content: center;
+                background-color: transparent;
+                border-style: none;
+            }
+            
+        }
         
         .clefs {
             height: 35vh;

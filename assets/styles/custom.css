@@ -12881,7 +12881,7 @@ main .tenets ul li span {
 footer {
   font-family: "Special Elite", cursive;
 }
-footer h5, footer .h5 {
+footer h4, footer .h4 {
   color: var(--bs-cultured);
   font-size: 1.5rem;
 }

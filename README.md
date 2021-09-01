@@ -43,9 +43,17 @@ Editeur : VS Code
 ```bash
 npm install bootstrap
 npm install bootstrap-icons
+npm i -g purgecss
+    -> purgecss --css feuille_de_style --content liste_des_pages_html --output fichier_de_sortie
 ```
-## Rendu final
-![Menu mobile](./assets/img/github/menu_mobile.png "ALTK")
 
-![Académie](./assets/img/github/académie_desktop.png "ALTK")
+## Rendu final
+![Menu mobile](./assets/img/github/menu_mobile.png "Menu mobile en overlay")
+
+![Académie](./assets/img/github/académie_desktop.png "Capture d'une section de la page académie dans sa version desktop")
+
+## Résultats des tests lighthouse
+![Test Mobile](./assets/img/github/mobile_lighthouse.png "Résultats du test dans la version mobile")
+![Test Desktop](./assets/img/github/desktop_lighthouse.png "Résultats du test dans la version desktop")
+
 

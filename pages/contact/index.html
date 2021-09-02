@@ -94,25 +94,27 @@
       </article>
   <div class="row">
     <div class="col-md-6 mx-auto my-5">
-        <form class="d-flex flex-column align-items-stretch mt-3 mb-5">
+        <form class="d-flex flex-column align-items-stretch mt-3 mb-5"
+        action="https://formspree.io/f/xrgrrkqe"
+        method="POST">
           <div class="mb-3 mx-3">
             <label for="nom" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="nom" aria-describedby="nomHelp">
+            <input type="text" class="form-control" id="nom" name="nom" aria-describedby="nomHelp">
             <div id="nomlHelp" class="form-text">Saisissez votre nom</div>
           </div>
           <div class="mb-3 mx-3">
             <label for="prenom" class="form-label">Prénom</label>
-            <input type="text" class="form-control" id="prenom" aria-describedby="prenomHelp">
+            <input type="text" class="form-control" id="prenom" name="prenom" aria-describedby="prenomHelp">
             <div id="prenomHelp" class="form-text">Saisissez votre prénom</div>
           </div>
           <div class="mb-3 mx-3">
             <label for="Email" class="form-label">Adresse mail</label>
-            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="Email" name="_replyto" aria-describedby="emailHelp">
             <div id="emailHelp" class="form-text">Saisissez une adresse mail valide</div>
           </div>
           <div class="mb-3 mx-3">
             <label for="telephone" class="form-label">Numéro de téléphone</label>
-            <input type="tel" class="form-control" id="telephone">
+            <input type="tel" class="form-control" id="telephone" name="telephone">
           </div>
           <div class="mb-3 mx-3">
             <label for="msg">Message :</label>
@@ -190,7 +192,7 @@
 
   <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../../assets/scripts/OnScroll.js"></script>
-  <script src="../../assets/scripts/LightboxInModal.js"></script>
+  <script src="../../assets/scripts/resetForm.js"></script>
 </body>
 
 </html>

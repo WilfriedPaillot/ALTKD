@@ -5,7 +5,7 @@ document.addEventListener("click",function (e){
         const paragraphContent = e.target.getAttribute("alt");
         document.querySelector(".modal-img").src = src;
         document.querySelector(".modal-img-legend").textContent = paragraphContent;
-        const myModal = document.getElementById('gallerie-modal');
-        myModal.show(myModal);
-    }
+        const myModal = new bootstrap.Modal(document.getElementById('gallerie-modal'));
+        myModal.show();
+    } 
 })

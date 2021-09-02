@@ -1,18 +1,54 @@
-# Académie Lamottoise de taekwondo
+# ALTKD - Académie Lamottoise de taekwondo
 
-## Réalisation d'un site statique pour l'académie Lamottoise de taekwondo
+## Évaluation d'entrainement :
 
-### Contexte
+Réalisation d'un site statique pour une association
 
-Le contexte initial est de réaliser un site statique avec un framework CSS pour l'évaluation 1 de Studi, en préparation du titre professionnel "Développeur Web et Web mobile".
-Les attentes étant de présenter un site pour une association, j'ai proposé au président de l'association ALTKD, afin de travailler sur un véritable projet, de remplir les obligations de cette épreuve tout en leur offrant un site vitrine.
-Après un bref entretien, nous nous sommes mis d'accord sur les attentes spécifiques et les contraintes techniques. Après avoir réalisé un bref wireframe, puis une maquette sous Figma, il est temps de passer à la conception.
+Version: GDWFSHTMLCSSBOOTEXAIII1A
 
-## Environement
+
+### Livrable attendu pour l’examen de ce bloc
+
+• Un site internet présente de nombreux intérêts pour une association, surtout en termes de visibilité. 
+Alors une association vous demande vos services dans la création d'un site vitrine (c’est à vous de 
+choisir une association, qu’elle soit réelle ou fictive, l’important sera votre code).
+
+• Un dépôt contenant le code source de votre rendu.
+
+### Contexte du projet
+
+Un site internet présente de nombreux intérêts pour une association, surtout en termes de visibilité (c’est
+à vous de choisir une association, qu’elle soit réelle ou fictive, l’important sera votre code).
+Le site devra au minimum contenir 2 pages :
+
+• Une page relative à l’association.
+
+• Une page publicitaire des événements à l'échelle national (Vous choisissez le thème de l’événement, la
+date, les détails).
+
+Bien entendu le site devra être responsive et à la demande du client l'interface devra être pensée mobile
+first !
+
+## Environnement de développement
+
+Environnement système : Windows 10
+
+Editeur : VS Code 
 
 ```bash
-
-npm install boostrap
-npm install boostrap-icons
-
+npm install bootstrap
+npm install bootstrap-icons
+npm i -g purgecss
+    -> purgecss --css feuille_de_style --content liste_des_pages_html --output fichier_de_sortie
 ```
+
+## Rendu final
+![Menu mobile](./assets/img/github/menu_mobile.png "Menu mobile en overlay")
+
+![Académie](./assets/img/github/académie_desktop.png "Capture d'une section de la page académie dans sa version desktop")
+
+## Résultats des tests lighthouse
+![Test Mobile](./assets/img/github/mobile_lighthouse.png "Résultats du test dans la version mobile")
+![Test Desktop](./assets/img/github/desktop_lighthouse.png "Résultats du test dans la version desktop")
+
+

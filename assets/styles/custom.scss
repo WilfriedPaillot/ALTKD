@@ -1,0 +1,295 @@
+// Required elements loaded for override
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/variables";
+
+// Here, i can...
+
+    $rich-black-fogra-39: rgba(11, 9, 10, 1);
+    $eerie-black: rgba(22, 26, 29, 1);
+    $blood-red: rgba(102, 7, 8, 1);
+    $ruby-red: rgba(164, 22, 26, 1);
+    $carnelian: rgba(186, 24, 27, 1); 
+    $imperial-red: rgba(229, 56, 59, 1);
+    $silver-chalice: rgba(177, 167, 166, 1);
+    $light-gray: rgba(211, 211, 211, 1);
+    $cultured: rgba(245, 243, 244, 1);
+
+    //create custom colors map for merge
+    $new-colors: (
+    "rich-black-fogra": $rich-black-fogra-39,
+    "eerie-black": $eerie-black,
+    "blood-red": $blood-red,
+    "ruby-red": $ruby-red,
+    "carnelian": $carnelian,
+    "imperial-red": $imperial-red,
+    "silver-chalice": $silver-chalice,
+    "light-gray": $light-gray,
+    "cultured": $cultured
+    );
+
+    // Change default font family
+    $font-family-sans-serif: 'Merriweather', serif;
+
+    // Merge 2 maps in 1
+    $theme-colors: map-merge($theme-colors, $new-colors);
+
+    // Activate unable options
+    $enable-negative-margins: true;
+    $enable-shadows: true;
+
+    // override BS defaults fonts and styles of variables        
+
+    $navbar-dark-color:                 $silver-chalice;
+    $navbar-dark-hover-color:           $imperial-red;
+    $navbar-dark-active-color:          $cultured;
+    $navbar-dark-toggler-icon-bg:       url("../img/header/burgerMenu.svg");
+    $navbar-dark-toggler-border-color:  none;
+    $navbar-toggler-focus-width:        none;
+
+    $carousel-indicator-active-bg:       $carnelian;
+
+$input-focus-border-color: $carnelian;  
+$input-focus-box-shadow: none;
+
+// Modifications on accordion component
+    // active bg-color
+    $accordion-button-active-bg:    $ruby-red;
+    // active color text
+    $accordion-button-active-color: $cultured;
+    // disabled shadow effect when active
+    $accordion-button-focus-box-shadow:none;
+    // Icon in not collapsed equal to active color text 
+    $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-button-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+
+// Custom modal Lightbox
+    $modal-content-bg:                  $cultured;
+    $modal-backdrop-bg:                 $eerie-black;
+    $modal-backdrop-opacity:            .9;
+
+// Add all BS natives and overriden styles on my custom.css
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+// Now, i can use additionnal custom styles
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Special+Elite&display=swap');
+
+
+header {
+    background-image: url(../img/header/bg_header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+}
+
+.logo {
+    height:80px;
+    width: auto;
+    filter:drop-shadow(0px 0px 6px var(--bs-cultured));
+
+    &.overlay {
+        margin-top:15px;
+        height:120px;
+        width: auto;
+    }
+}
+
+span.navbar-toggler-icon {
+    height: 49px;
+    width:47px;
+}
+
+header .nav-link {
+    line-height: 0.85;
+    font-family: 'Special Elite', cursive;
+    font-size:1.5rem;
+    letter-spacing: 2px;
+}
+
+// Affichage du menu collaspe en overlay
+.navbar-collapse {
+    position: absolute;
+    //sinon, le logo_sans_texte du footer apparait dans le menu overlay
+    z-index:1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100vh;
+    //Nécessaire pour empêcher le scroll 
+    position: fixed;
+    overflow:hidden;
+    background-color: var(--bs-eerie-black);
+
+}
+
+@media screen and (min-width:992px){
+    header {
+        background-image: url(../img/header/bg_header.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+    }
+
+    // Retour à la gestion de l'affichage du menu collapsé par les classes BS
+    header .navbar-collapse{
+        position: static;
+        height: auto;
+        background-color: transparent;
+    }
+
+    //Retour à la gestion de l'affichage géré par BS
+    header .nav-link {
+        line-height: initial;
+        font-size: 1.25rem;
+        letter-spacing: initial;
+    }
+
+    main{
+        & section img {
+            max-width: 75%;
+        }
+        .red-zone {
+            max-width: 75%;
+        }
+    }
+
+}
+
+.logo_sans_texte {
+    position: relative;
+    top:-5vh;
+    height: 130px;
+    width: 130px;
+    margin: auto;
+        & .test {
+        filter:drop-shadow(0px 0px 15px var(--bs-ruby-red));
+        }
+}
+
+main  {
+        h2.page-title {
+            font-family: 'Special Elite', cursive;
+            color: var(--bs-eerie-black); 
+            font-size: calc(1.85rem + 2vw);
+        }
+
+        article {
+            & h2.article-title {
+                font-family: 'Special Elite', cursive;
+                font-size: calc(1.85rem + 2vw);
+                color: var(--bs-eerie-black);
+            }
+            & h3.article-subtitle {
+                font-size: 1.55rem;
+            }
+            & p.article-text{
+                & strong, b {
+                color: var(--bs-blood-red);
+                }
+            }
+            & a.article-link {
+                color: var(--bs-carnelian);
+                &:hover { color: var(--bs-blood-red); }
+                &:visited { color: var(--bs-blood-red); } 
+            }
+        }
+
+
+        .card { 
+            height: 100%;
+            border-style: none; 
+
+            & .card-body {
+                flex-grow: 1;
+            
+                & h5.card-title  { 
+                    font-family: 'Special Elite', cursive;
+                    color: var(--bs-eerie-black); 
+                    font-size: calc(1.50rem + 1vw);
+                }
+
+                & h6.card-subtitle  { 
+                    font-size: 1.25rem;
+                }
+
+                & a.card-link {
+                    color: var(--bs-carnelian);
+                        &:hover { color: var(--bs-blood-red); }
+                        &:visited { color: var(--bs-blood-red); }        
+                    }
+            }
+
+            & .card-footer {
+                display: flex;
+                justify-content: center;
+                background-color: transparent;
+                border-style: none;
+            }
+            
+        }
+        
+        .clefs {
+            height: 35vh;
+            font-family: 'Special Elite', cursive;
+            line-height: 1rem;            
+            letter-spacing:4px;
+
+        & p { font-size: 1.55rem; }        
+        & span { font-size: 1.25rem; }
+        }
+
+        .tenets {
+            & ul {
+                list-style: none;
+                & li {
+                    font-family: 'Special Elite', cursive;
+                    font-size: calc(1rem + 0.8vw);
+                    letter-spacing:2px;
+                    line-height: 0.8;
+                    padding: 0.8rem;
+                    & span {
+                        font-size: calc(0.65rem + 0.8vw);
+                        color: var(--bs-ruby-red);
+                    }
+                }
+            }
+        }
+
+}
+
+footer {
+    font-family: 'Special Elite', cursive;
+        h4 { 
+            color: var(--bs-cultured); 
+            font-size: 1.5rem;
+        }
+        & .nav-link {
+            color: var(--bs-silver-chalice);
+            font-size: 1rem;
+            letter-spacing:2px;
+                &.active { color: var(--bs-cultured); }
+                &:hover { color: var(--bs-imperial-red); }           
+            }
+        p { font-family: initial; }
+}
+
+.carousel-item img {
+    min-height:240px;
+    height: 240px;
+    object-fit: fill;
+    filter: grayscale(60%);
+}
+
+.modal-content{
+    filter: drop-shadow(0 0 0.55rem $silver-chalice);
+}
+
+address {
+    h4 { 
+        font-family: 'Special Elite', cursive; 
+        font-weight: lighter; 
+        letter-spacing: 1.25px;
+    }
+}

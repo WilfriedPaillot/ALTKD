@@ -768,6 +768,13 @@ textarea.form-control {
   margin-bottom: 0;
 }
 
+.card-link:hover {
+  text-decoration: none;
+}
+.card-link + .card-link {
+  margin-left: 1rem;
+}
+
 .card-footer {
   padding: 0.5rem 1rem;
   background-color: rgba(0, 0, 0, 0.03);
@@ -1411,16 +1418,8 @@ textarea.form-control {
 }
 @media (min-width: 992px) {
 
-  .d-lg-inline-flex {
-    display: inline-flex !important;
-  }
-
   .d-lg-none {
     display: none !important;
-  }
-
-  .mt-lg-0 {
-    margin-top: 0 !important;
   }
 
   .ms-lg-n5 {
@@ -1574,6 +1573,15 @@ main .card .card-body h5.card-title, main .card .card-body .card-title.h5 {
 }
 main .card .card-body h6.card-subtitle, main .card .card-body .card-subtitle.h6 {
   font-size: 1.25rem;
+}
+main .card .card-body a.card-link {
+  color: var(--bs-carnelian);
+}
+main .card .card-body a.card-link:hover {
+  color: var(--bs-blood-red);
+}
+main .card .card-body a.card-link:visited {
+  color: var(--bs-blood-red);
 }
 main .card .card-footer {
   display: flex;

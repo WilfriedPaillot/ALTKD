@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="preload" as="image" href="../../assets/img/header/bg_header.jpg" /> 
-    <link rel="stylesheet" href="../../assets/styles/purgedCssV2.css" media="all">
+    <link rel="stylesheet" href="../../assets/styles/purgedCssV4.css" media="all">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" defer>
   
     <title>Académie Lamottoise de taekwondo - Club de taekwondo à Lamotte-Beuvron</title>
@@ -27,10 +27,19 @@
 <body>
   <header>
     <!-- Start of navbar -->
-    <nav id="navigation" class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <nav id="navigation" class="navbar navbar-expand-xxl navbar-dark bg-transparent">
       <div class="container-fluid">
         <a class="navbar-brand py-0 me-0" href="../../index.html" title="Retour à l'accueil">
-          <img src="../../assets/img/header/logo.svg" class="logo" alt="Logo de l'academie de taekwondo">
+            <h1 id="vertical_title" class="d-none d-xl-inline-flex vertical_title">
+              <span class="span_title">Académie</span>
+              <span class="span_title">Lamottoise</span>
+              <span class="span_title3">
+                <p>T</p>ae
+                <span>K</span>won
+                <span>D</span>o
+              </span>
+            </h1> 
+          <img src="../../assets/img/header/logo.svg" id="logo" class="logo d-none" alt="Logo de l'académie" loading="lazy">
         </a>
         <button class="navbar-toggler pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,10 +47,10 @@
           </span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarText">
-          <div class="text-center pt-2 d-lg-none">
-            <img src="../../assets/img/header/logo.svg" class="logo overlay" alt="Logo de l'academie de taekwondo" href="./index.html">
+          <div class="text-center pt-2 d-xxl-none">
+            <img src="../../assets/img/header/logo.svg" class="logo overlay" alt="Logo de l'academie de taekwondo" href="../../index.html">
           </div>
-          <ul class="navbar-nav align-items-center mt-5 mt-lg-0">
+          <ul class="navbar-nav align-items-center mt-5 mt-xxl-0">
             <li class="nav-item">
               <a class="nav-link" href="../../index.html" title="Accueil">Accueil</a>
             </li>
@@ -62,10 +71,10 @@
             </li>
             <span class="mt-5 fs-5 text-cultured d-lg-none">Informations pratiques</span>
             <li class="nav-item">
-              <a class="nav-link d-lg-none fs-6" href="#" title="Mentions légales">Mentions légales</a>
+              <a class="nav-link d-xxl-none fs-6" href="#" title="Mentions légales">Mentions légales</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-lg-none fs-6" href="#" title="Conditions générales">Conditions générales</a>
+              <a class="nav-link d-xxl-none fs-6" href="#" title="Conditions générales">Conditions générales</a>
             </li>
             <!-- position-fixed bottom-0 -->
             <span class="text-white text-center mt-4 d-lg-none fw-lighter ">

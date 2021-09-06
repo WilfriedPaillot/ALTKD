@@ -121,7 +121,9 @@
       <div class="col-md-6">
           <div class="d-flex flex-row justify-content-evenly align-items-center h-100">
             <img src="../../assets/img/pages/taekwondo/taekwondo_tenets.jpg" alt="Photos des valeurs du taekwondo" class="img-fluid">
-            <div class="tenets">
+            <!-- Add d-none d-md-block to fix bug with X scroll on small devices. 
+                  Alternative choice can be to cut the col in row + 2 cols but redondant content -->
+            <div class="tenets d-none d-md-block">
               <ul>
                 <li> <span>Ye Ui</span></br> Courtoisie</li>
                 <li><span>Yom Chi</span></br>Intégrité</li>
